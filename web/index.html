@@ -13,28 +13,25 @@
                     <h1>Dashboard Uploads</h1>
                 </div>
 
-                <div class="intro-text-box">
-                    <label for="introText">Title</label>
-                    <input type="text" name="title" id="title">
-                </div>
-                
-                <!-- Inline layout for upload and intro sections -->
                 <div class="inline">
                     <div class="left-side">
                         <div class="upload-box">
                             <label for="uploadFile">Upload File</label>
-                            <input type="file" id="uploadFile">
+                            <input type="file" id="uploadFile" name="uploadFile" >  <!-- Added required attribute -->
                         </div>
                     </div>
     
                     <div class="right-side">
                         <div class="intro-text-box">
                             <label for="introText">Intro Text</label>
-                            <input type="text" id="introText">
+                            <input type="text" id="introText" name="introText" >  <!-- Added required attribute -->
                         </div>
     
                         <div class="checkbox-group">
                             <div class="top-side">
+                                <label>
+                                    <input type="checkbox" name="options" value="posthaven"> Post Haven
+                                </label>
                                 <label>
                                     <input type="checkbox" name="options" value="facebook"> Facebook
                                 </label>
@@ -42,7 +39,7 @@
                                     <input type="checkbox" name="options" value="pinterest"> Pinterest
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="options" value="insta"> Insta
+                                    <input type="checkbox" name="options" value="instagram"> Instagram
                                 </label>
                             </div>
                             <div class="middle-side">
@@ -55,12 +52,12 @@
                                 <label>
                                     <input type="checkbox" name="options" value="bsky"> BSKY
                                 </label>
-                            </div>    
-                            <div class="bottom-side">
-                                
-                                
                             </div>
+                            
+                            
                         </div>
+                        <label>Schedule Time To Upload</label> 
+                        <input type="time"> 
                     </div>
                 </div>
     
